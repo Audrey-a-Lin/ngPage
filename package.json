@@ -1,0 +1,30 @@
+{
+  "name": "ngpage",
+  "version": "1.0.0",
+  "description": "AngularJS plugin for pagination.",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp serve",
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Audrey-a-Lin/ngPage.git"
+  },
+  "author": "audrey.a.lin@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Audrey-a-Lin/ngPage/issues"
+  },
+  "homepage": "https://github.com/Audrey-a-Lin/ngPage#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-compass": "^2.1.0",
+    "jasmine-core": "^3.2.1",
+    "karma": "^3.1.4",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^2.0.1",
+    "karma-safari-launcher": "^1.0.0"
+  }
+}

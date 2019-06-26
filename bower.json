@@ -1,0 +1,28 @@
+{
+  "name": "ngpage",
+  "description": "AngularJS plugin for pagination.",
+  "main": "index.js",
+  "authors": [
+    "audrey.a.lin@gmail.com"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "angularjs",
+    "pagination"
+  ],
+  "homepage": "https://github.com/Audrey-a-Lin/ngPage",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-cookies": "^1.6.4"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.7.3"
+  }
+}

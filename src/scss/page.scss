@@ -1,0 +1,113 @@
+// Pagination Plugin
+
+/*
+	Variable Setting
+ */
+$font-size-base: 16px;
+$white: #fff;
+$color-pld: #ddd;
+$color-main: #69c;
+$color-disabled: #ccc;
+$padding-h: 5px;
+$padding-v: 3px;
+$font-family-icon: 'FontAwesome';
+
+// Selected element style
+@mixin user-select($type: none) {
+	-webkit-touch-callout: $type;
+	-webkit-user-select: $type;
+	-khtml-user-select: $type;
+	-moz-user-select: $type;
+	-ms-user-select: $type;
+	user-select: $type;
+}
+// Place element on middle of vertical 
+@mixin inline-block {
+	display: inline-block;
+	vertical-align: middle;
+}
+/*
+	Component Layout
+ */
+
+.page {
+	text-align: left;
+	padding: $padding-v*2 $padding-h*2;
+
+	// Jump page
+	&-fast {
+		@include inline-block;
+		color: $color-pld;
+		margin-left: $padding-h;
+	}
+		&-fast-input {
+			padding: $padding-v/2 $padding-h/2;
+			width: auto;
+			font-size: $font-size-base;
+		}
+}
+.page-list {
+	@include inline-block;
+	padding: 0;
+	margin: 0;
+
+	font-size: $font-size-base;
+	font-weight: normal;
+	@include user-select(none);
+
+	//Each Page items
+	.page-item {
+		@include inline-block;
+		width:  $font-size-base*2;
+		height: $font-size-base*2;
+		margin: 0 $padding-h/5;
+		color: $color-main;
+		text-align: center;
+		line-height: $font-size-base*2 - 2px;
+		background-color: $white;
+		border-radius: 100%;
+		border: 1px solid;
+		border-color: transparent;
+		cursor: pointer;
+		&::before {
+			font-family: $font-family-icon;
+		}
+		// First page
+		&--first {
+			&::before {
+				content: '\f100';
+			}
+		}
+		// Previous page
+		&--prev {
+			&::before {
+				content: '\f104';
+			}
+		}
+		// Next page
+		&--next {
+			&::before {
+				content: '\f105';
+			}
+		}
+		// LAst page
+		&--last {
+			&::before {
+				content: '\f101';
+			}
+		}
+		// Disabled status
+		&--dis {
+			color: $color-pld;
+			background-color: $color-disabled;
+			border-color: $color-disabled;
+		}
+		// Page now on
+		&--on {
+			color: $white;
+			background-color: $color-main;
+			border-color: $color-main;
+		}
+	}
+
+}
