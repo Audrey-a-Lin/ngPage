@@ -18,11 +18,11 @@
   },
   "homepage": "https://github.com/Audrey-a-Lin/ngPage#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.10",
     "gulp": "^4.0.2",
     "gulp-compass": "^2.1.0",
     "jasmine-core": "^3.2.1",
-    "karma": "^3.1.4",
+    "karma": "^6.4.1",
     "karma-chrome-launcher": "^2.2.0",
     "karma-jasmine": "^2.0.1",
     "karma-safari-launcher": "^1.0.0"
